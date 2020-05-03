@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alto = parseInt(prompt("Introduzca la altura del rectángulo"));
+        let ancho = parseInt(prompt("Introduzca la anchura del rectángulo"));
+
+        let filaimpar = "";
+        let filapar = "";
+
+        for (let i = 1; i <= ancho; i = i + 1)
+            {
+                if (i % 2 != 0)
+                {
+                    filaimpar = filaimpar + "X";
+                }
+                else
+                {
+                    filaimpar = filaimpar + "O";
+                }
+            }
+        
+        for (let i = 1; i <= ancho; i = i + 1)
+            {
+                if (i % 2 != 0)
+                {
+                    filapar = filapar + "O";
+                }
+                else
+                {
+                    filapar = filapar + "X";
+                }
+            }
+
+        // Filas de string creadas
+
+        for (let i = 1; i <= alto; i = i + 1)
+        {
+            if (i % 2 != 0)
+            {
+                console.log(filaimpar);
+            }
+            else
+            {
+                console.log(filapar);
+            }
+            
+        }
+       
+    </script>
+</body>
+</html>
